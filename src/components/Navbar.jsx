@@ -4,7 +4,7 @@ import favicon from "../assets/favicon.ico";
 
 function Navbar() {
   return (
-    <div className="navbar">
+    <div className="navbar-container">
       <img src={favicon} className="logo" alt="logo" />
       <div className="navbar">
         <ul>
