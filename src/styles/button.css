@@ -1,0 +1,7 @@
+.button-style {
+    @apply px-6 py-3 flex items-center justify-center gap-[10px] rounded-full bg-primary w-fit;
+}
+
+.button-text {
+    @apply text-white-color font-dm-sans font-bold text-xl;
+}
