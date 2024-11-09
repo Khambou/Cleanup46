@@ -8,13 +8,11 @@ module.exports = {
       secondary: "#F2F2F2",
       "red-color": "#FA6A72",
       "sky-blue-color": "#F0FBFF",
+      "white-color": "#FFFFFF",
     },
     fontFamily: {
       "dm-sans": ["DM Sans", "sans-serif"],
       grotesque: ["Bricolage Grotesque", "sans-serif"],
-    },
-    fontSize: {
-      "0xl": ["5rem", "96px"],
     },
   },
   plugins: [],
