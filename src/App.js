@@ -11,7 +11,6 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/tarifs" element={<PricesPage />} />
-          <Route path="*" element={<NotFoundPage />} />
         </Routes>
     </>
   );
