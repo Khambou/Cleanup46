@@ -2,7 +2,7 @@ import '../styles/navbar.css';
 
 function Navbar() {
   return (
-    <div class="navbar">
+    <div class="navbar-container">
       <img src="favicon.ico" class="logo" alt="logo" />
       <div class="navbar">
         <ul>
