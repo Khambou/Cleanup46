@@ -8,15 +8,17 @@ import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/tarifs" element={<PricesPage />} />
-        <Route path="/about-us" element={<AboutPage />} />
-        <Route path="/contact-us" element={<ContactPage />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="font-dm-sans">
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/tarifs" element={<PricesPage />} />
+          <Route path="/about-us" element={<AboutPage />} />
+          <Route path="/contact-us" element={<ContactPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
