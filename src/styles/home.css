@@ -1,0 +1,18 @@
+body {
+    overflow: auto;
+    min-height: 100vh;
+}
+
+.title {
+    align-items: center;
+    display: flex;
+}
+
+.cleaning-car {
+    height: 35rem;
+    margin: 5rem 0 0 50rem;
+}
+
+.rounded {
+    border-radius: 50%;
+}

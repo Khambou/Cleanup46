@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Cleanup46
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Cleanup46** est le site web officiel d'une entreprise de services spécialisés dans le **lavage automobile** et le **nettoyage intérieur de maison**. Ce site, développé en **React**, permet aux clients de découvrir les services offerts, de consulter les tarifs, et de prendre rendez-vous en ligne.
 
-## Available Scripts
+## Table des Matières
 
-In the project directory, you can run:
+1. [Aperçu du Projet](#aperçu-du-projet)
+2. [Fonctionnalités](#fonctionnalités)
+3. [Technologies Utilisées](#technologies-utilisées)
+4. [Installation et Utilisation](#installation-et-utilisation)
+5. [Scripts Disponibles](#scripts-disponibles)
+6. [Structure des Fichiers](#structure-des-fichiers)
+7. [Contributions](#contributions)
+8. [Licence](#licence)
 
-### `npm start`
+## Aperçu du Projet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ajoutez des captures d'écran ou des GIFs de votre site Cleanup46 pour présenter les différentes sections, comme la page de services ou la prise de rendez-vous.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Fonctionnalités
 
-### `npm test`
+- **Présentation des Services** : Description complète des services de lavage automobile et de nettoyage d'intérieur.
+- **Tarification** : Consultation des tarifs pour chaque type de service.
+- **Prise de Rendez-vous** : Interface simple pour réserver un service en ligne.
+- **Réactivité** : Optimisé pour un affichage parfait sur tout type d'appareil (ordinateur, tablette, mobile).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Utilisées
 
-### `npm run build`
+- **React** - Pour la construction de l'interface utilisateur.
+- **React Router** - Pour une navigation fluide entre les pages.
+- **Axios** - Gestion des appels API pour la prise de rendez-vous et les données de services.
+- **Styled Components / CSS Modules** - Personnalisation de l'interface avec un style soigné.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation et Utilisation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prérequis
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Node.js** et **npm** doivent être installés.
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/Khambou/Cleanup46.git
+   cd Cleanup46
+   ```
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Lancer le projet
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Pour démarrer le projet en mode développement :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Ensuite, ouvrez [http://localhost:3000](http://localhost:3000) pour voir le site dans le navigateur.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Scripts Disponibles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **`npm start`** : Démarre l'application en mode développement.
+- **`npm run build`** : Compile l'application pour un déploiement en production.
+- **`npm test`** : Lance les tests unitaires.
+- **`npm run eject`** : Retire la configuration React (opération irréversible).
 
-### Code Splitting
+## Structure des Fichiers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Voici une structure simplifiée des fichiers pour Cleanup46 :
 
-### Analyzing the Bundle Size
+```
+Cleanup46/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/        # Composants réutilisables (ex. ServiceCard, Navbar)
+│   ├── pages/             # Pages principales (ex. Accueil, Services, Rendez-vous)
+│   ├── services/          # Gestion des appels API
+│   ├── utils/             # Fonctions utilitaires
+│   ├── App.js             # Composant principal
+│   └── index.js           # Point d'entrée de l'application
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributions
 
-### Making a Progressive Web App
+Les contributions sont les bienvenues ! Suivez ces étapes :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Fork le projet.
+2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/NouvelleFonctionnalite`).
+3. Committez vos modifications (`git commit -m 'Ajout d'une nouvelle fonctionnalité'`).
+4. Pushez vers la branche (`git push origin feature/NouvelleFonctionnalite`).
+5. Ouvrez une **Pull Request**.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce README donne une présentation professionnelle et complète de ton projet Cleanup46 sur GitHub, en facilitant la compréhension pour les utilisateurs et les contributeurs potentiels.

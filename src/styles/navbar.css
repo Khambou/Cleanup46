@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #00A1F2;
+    overflow: hidden;
+    padding: 1rem 2.5rem;
+}
+
+.navbar a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #7fdbff;
+}
+
+.navbar .logo {
+    position: absolute;
+    height: 50px;
+    top: 2rem;
+    left: 8rem;
+}
