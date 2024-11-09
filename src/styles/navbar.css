@@ -14,9 +14,7 @@
     font-size: 1rem;
 }
 .navbar-container {
-    display: flex;
-    align-items: center;
-    background-color: #00A1F2;
+    @apply flex items-center bg-primary mb-10;
 }
 .logo {
     margin-right: auto;
