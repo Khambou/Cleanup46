@@ -7,6 +7,7 @@ import ImageGallery2 from "./cleaner-1.jpg";
 import ImageGallery3 from "./cleaner-2.jpg";
 import ImageGallery4 from "./car-clean-3.jpg";
 import ImageGallery5 from "./car-clean-2.jpg";
+import PlaceHolderImg from "./placeholderImg.svg";
 
 export {
   PricingHeaderImg,
@@ -18,4 +19,5 @@ export {
   ImageGallery3,
   ImageGallery4,
   ImageGallery5,
+  PlaceHolderImg,
 };
