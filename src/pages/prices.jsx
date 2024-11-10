@@ -1,9 +1,10 @@
 import { Button } from "../components/Button.jsx";
 import { ArrowRight } from "../assets/icons";
 import "../styles/prices.css";
-import { PricingHeaderImg } from "../assets/images";
+import { PricingHeaderImg, PricingMiddleImg } from "../assets/images";
 import { CleaningCarsPricing } from "../components/CleaningCarsPricing";
 import { BannerImage } from "../components/BannerImage";
+import CleaningHouseItemsPricing from "../components/CleaningHouseItemsPricing";
 
 function Prices() {
   return (
@@ -28,8 +29,10 @@ function Prices() {
           />
         </div>
       </div>
-      <BannerImage imageUrl={PricingHeaderImg} />
+      <BannerImage imageUrl={PricingHeaderImg} altText="Car Washing" />
       <CleaningCarsPricing />
+      <BannerImage imageUrl={PricingMiddleImg} altText="Couch Cleaning" />
+      <CleaningHouseItemsPricing />
     </>
   );
 }
