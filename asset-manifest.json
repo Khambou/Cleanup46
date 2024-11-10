@@ -1,14 +1,46 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4cdd988.css",
-    "main.js": "/static/js/main.514c8798.js",
+    "main.css": "/static/css/main.5d118453.css",
+    "main.js": "/static/js/main.860dc1c1.js",
+    "static/media/men-cleaning.png": "/static/media/men-cleaning.6591784303f14c15723e.png",
+    "static/media/man-washing-car.jpg": "/static/media/man-washing-car.2a6c2126cd75d79ef850.jpg",
+    "static/media/car-clean-3.jpg": "/static/media/car-clean-3.8f86d6171c735f161715.jpg",
+    "static/media/car-clean-2.jpg": "/static/media/car-clean-2.512d547208a2f093c496.jpg",
+    "static/media/cleaner-4.jpg": "/static/media/cleaner-4.2ee3d6d17bd5e921b594.jpg",
+    "static/media/cleaner-2.jpg": "/static/media/cleaner-2.f175565615fcbeb47e00.jpg",
+    "static/media/car-clean-1.jpeg": "/static/media/car-clean-1.d4f9b1f8a4659f34f638.jpeg",
+    "static/media/car-team.jpg": "/static/media/car-team.bc7d9ec8b6153bc215b8.jpg",
     "static/media/favicon.ico": "/static/media/favicon.f39dd4a10da08ed1f0a9.ico",
+    "static/media/cleaner-1.jpg": "/static/media/cleaner-1.3f9da2d67e68a9639437.jpg",
+    "static/media/environment.svg": "/static/media/environment.1773546f5528015a534cc96b9083c1ac.svg",
+    "static/media/customer-service.svg": "/static/media/customer-service.3dfca547fd99c2b01aa7772bc7897d51.svg",
+    "static/media/quality.svg": "/static/media/quality.326a3ea066241e153f91a779bf4ad753.svg",
+    "static/media/cleaning-hand.svg": "/static/media/cleaning-hand.7dfc2e84d9627b16e2f9de8482f02b58.svg",
+    "static/media/placeholderImg.svg": "/static/media/placeholderImg.c18b24746439ab826882cd27d677b3ea.svg",
+    "static/media/people.svg": "/static/media/people.f9c1138afc5487664b0bf559fc25071d.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.dfc154ec6f7fd866260a59d2dac87b48.svg",
+    "static/media/sofa-couch.svg": "/static/media/sofa-couch.6235dc3d00f6195eaf32f0122a8fd92c.svg",
+    "static/media/star-fast.svg": "/static/media/star-fast.5102bbac58e33bd408d3d30c4062a042.svg",
+    "static/media/call.svg": "/static/media/call.97c721a76c0a37656ae07a88e111b45f.svg",
+    "static/media/trophy.svg": "/static/media/trophy.341895ffb32df3b6f7162639c72341dc.svg",
+    "static/media/reliabale.svg": "/static/media/reliabale.bd3bfaa31d0bfe5675c26d1772d2b752.svg",
+    "static/media/instagram.svg": "/static/media/instagram.7323ebcde75828256d4ea5569bc29af3.svg",
+    "static/media/location.svg": "/static/media/location.ddf66078b585ee4ede3a8c9ca8e4879d.svg",
+    "static/media/map-frame.svg": "/static/media/map-frame.da7e7ee6680c853e35600bf708f9ca8a.svg",
+    "static/media/export.svg": "/static/media/export.82716ee09eb49ad4a20ec7e75b07f45a.svg",
+    "static/media/sms.svg": "/static/media/sms.6fe693997605546cf627788815507c46.svg",
+    "static/media/add-circle.svg": "/static/media/add-circle.ddfb332f1a23a3a7297b7462314f5627.svg",
+    "static/media/minus-cirlce.svg": "/static/media/minus-cirlce.5897c81e52e0cb8e8bce290207b0aa68.svg",
+    "static/media/arrow-right.svg": "/static/media/arrow-right.23c79ff90b3751ad9047019383970a75.svg",
+    "static/media/check-lg.svg": "/static/media/check-lg.f45304b0a7523920ad22a65f459e4f1f.svg",
+    "static/media/arrow-up.svg": "/static/media/arrow-up.3c132fce7ebb3caccd1a5062e77c4197.svg",
+    "static/media/arrow-down.svg": "/static/media/arrow-down.84b7fc8b734fe705340efaf96ccf2bc5.svg",
     "index.html": "/index.html",
-    "main.d4cdd988.css.map": "/static/css/main.d4cdd988.css.map",
-    "main.514c8798.js.map": "/static/js/main.514c8798.js.map"
+    "main.5d118453.css.map": "/static/css/main.5d118453.css.map",
+    "main.860dc1c1.js.map": "/static/js/main.860dc1c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4cdd988.css",
-    "static/js/main.514c8798.js"
+    "static/css/main.5d118453.css",
+    "static/js/main.860dc1c1.js"
   ]
 }
