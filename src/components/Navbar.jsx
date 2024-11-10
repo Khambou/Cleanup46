@@ -1,25 +1,38 @@
 import "../styles/navbar.css";
 import { Link } from "react-router-dom";
 import favicon from "../assets/favicon.ico";
+import { useLocation } from "react-router-dom";
+
+const NavLink = ({ active, linkTo, linkText }) => (
+  <li className={active ? "text-white" : "text-dark-color"}>
+    <Link to={linkTo}>{linkText}</Link>
+  </li>
+);
 
 function Navbar() {
+  const { pathname } = useLocation();
+
   return (
     <div className="navbar-container">
       <img src={favicon} className="logo" alt="logo" />
       <div className="navbar">
         <ul>
-          <li className="font-dm-sans">
-            <Link to="/">ACCUEIL</Link>
-          </li>
-          <li>
-            <Link to="/tarifs">NOS TARIFS</Link>
-          </li>
-          <li>
-            <Link to="/about-us">À PROPOS DE NOUS</Link>
-          </li>
-          <li>
-            <Link to="/contact-us">NOUS CONTACTER</Link>
-          </li>
+          <NavLink linkTo="/" active={pathname === "/"} linkText="Accueil" />
+          <NavLink
+            linkTo="/tarifs"
+            active={pathname === "/tarifs"}
+            linkText="Nos tarifs"
+          />
+          <NavLink
+            linkTo="/about-us"
+            active={pathname === "/about-us"}
+            linkText="À propos de nous"
+          />
+          <NavLink
+            linkTo="/contact-us"
+            active={pathname === "/contact-us"}
+            linkText="Nous contacter"
+          />
         </ul>
       </div>
     </div>
