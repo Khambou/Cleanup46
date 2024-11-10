@@ -9,6 +9,7 @@ module.exports = {
       "red-color": "#FA6A72",
       "sky-blue-color": "#F0FBFF",
       "white-color": "#FFFFFF",
+      "dark-color": "#1E1E1E",
     },
     fontFamily: {
       "dm-sans": ["DM Sans", "sans-serif"],

@@ -9,9 +9,8 @@
     padding: 3rem 2rem 3rem;
     color: #FFFFFF;
 }
-.navbar ul li a:link {
-    text-decoration: none;
-    font-size: 1rem;
+.navbar ul li {
+    @apply font-bold text-lg uppercase;
 }
 .navbar-container {
     @apply flex items-center bg-primary mb-10;
