@@ -5,6 +5,7 @@ import PricesPage from "./pages/prices.jsx";
 import AboutPage from "./pages/about-us.jsx";
 import ContactPage from "./pages/contact-us.jsx";
 import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/contact-us" element={<ContactPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
