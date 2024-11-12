@@ -1,11 +1,11 @@
 import { PricingDescription } from "./CleaningCarsPricing";
 import Tabs from "./Tabs";
 import { Button } from "./Button";
-import { ArrowRight } from "../assets/icons";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const CleaningHouseItems = () => {
   return (
-    <section className="general-page-layout">
+    <section className="general-page-layout" id="cleaning-house">
       <PricingDescription
         titleWidth=""
         titleText="Nettoyage canapé, matelas, tapis et moquettes"
@@ -15,9 +15,9 @@ const CleaningHouseItems = () => {
       <Tabs />
       <div className="flex-layout--center my-12">
         <Button
-          rightIcon={ArrowRight}
+          rightIcon={<FaArrowRightLong className="text-2xl text-white-color" />}
           link="/contact-us"
-          additionalButtonText="text-2xl"
+          additionalButtonText="text-2xl font-bold font-grotesque text-white-color"
           buttonText="Contactez-nous"
         />
       </div>
