@@ -21,3 +21,12 @@
     width: auto;
     margin-left: 5rem;
 }
+
+.link-active {
+    @apply text-white-color relative;
+}
+
+.link-active::after {
+    content: ' ';
+    @apply w-8 h-1 rounded-full bg-text-primary absolute top-8 right-0 left-0 m-auto;
+}
