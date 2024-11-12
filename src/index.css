@@ -119,3 +119,11 @@ textarea:not([rows]) {
 .h2 {
     @apply font-bold text-[2rem] leading-normal font-grotesque;
 }
+
+.h3 {
+    @apply text-2xl font-bold font-grotesque text-dark-color;
+}
+
+.h0 {
+    @apply font-grotesque font-bold text-[5rem] leading-normal -tracking-[0.8px];
+}
