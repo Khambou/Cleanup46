@@ -14,8 +14,12 @@ const PriceItem = ({ priceItem }) => {
       <div className="flex flex-col items-start gap-3">
         {benefits.map((benefit) => (
           <div key={benefit} className="flex-layout--center gap-5">
-            <div className="font-dm-sans py-[5px] px-[4.38px] rounded-full bg-sky-blue-color">
-              <img src={Check} alt="Check Icon" width={10} height={7.98} />
+            <div className="py-[5px] px-[4.38px] grow rounded-full bg-sky-blue-color">
+              <img
+                src={Check}
+                alt="Check Icon"
+                className="object-contain w-[10px] h-[7.98px]"
+              />
             </div>
             <p className="text-base font-dm-sans">{benefit}</p>
           </div>
