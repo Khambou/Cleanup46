@@ -9,8 +9,6 @@ export const Button = ({
   customAction,
   additionalButtonStyles = "",
   additionalButtonText = "",
-  leftIconStyle = "",
-  rightIconStyle = "",
 }) => {
   const navigate = useNavigate();
   return (
@@ -26,25 +24,17 @@ export const Button = ({
       }
       className={`button-style ${additionalButtonStyles}`}
     >
-      {leftIcon && (
-        <img
-          src={leftIcon}
-          alt="Left Icon"
-          width={24}
-          height={24}
-          className={`${leftIconStyle}`}
-        />
+      {leftIcon && leftIcon}
+      {buttonText && (
+        <p
+          className={
+            additionalButtonText ? additionalButtonText : "button-text"
+          }
+        >
+          {buttonText}
+        </p>
       )}
-      <p className={`button-text ${additionalButtonText}`}>{buttonText}</p>
-      {rightIcon && (
-        <img
-          src={rightIcon}
-          alt="Right Icon"
-          width={24}
-          height={24}
-          className={`text-white-color ${rightIconStyle}`}
-        />
-      )}
+      {rightIcon && rightIcon}
     </button>
   );
 };
