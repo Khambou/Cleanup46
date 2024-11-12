@@ -9,7 +9,6 @@ export const PricingDescription = ({
 }) => {
   const lines = description.split("   ");
 
-  console.log("line", lines);
   return (
     <div className={`flex-layout--start pt-16 pb-9 ${additionalStyle}`}>
       <h3
@@ -31,7 +30,7 @@ export const PricingDescription = ({
 
 export const CleaningCarsPricing = () => {
   return (
-    <section className="general-page-layout">
+    <section className="general-page-layout" id="cleaning-cars">
       <PricingDescription
         titleWidth="w-[514px]"
         titleText="Nettoyage intérieur de véhicule"
