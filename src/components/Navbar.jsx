@@ -4,7 +4,13 @@ import favicon from "../assets/favicon.ico";
 import { useLocation } from "react-router-dom";
 
 const NavLink = ({ active, linkTo, linkText }) => (
-  <li className={active ? "text-white" : "text-dark-color"}>
+  <li
+    className={
+      active
+        ? "link-active smooth-transition"
+        : "text-dark-color smooth-transition"
+    }
+  >
     <Link to={linkTo}>{linkText}</Link>
   </li>
 );
