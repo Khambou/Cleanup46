@@ -1,0 +1,23 @@
+.form-label {
+    @apply font-grotesque font-bold text-2xl;
+}
+
+.form-input {
+    @apply py-5 px-6 rounded-2xl border-[1px] border-solid border-dark-color w-full lg:w-[39rem];
+}
+
+.form-input::placeholder {
+    @apply font-dm-sans text-lg text-text-primary opacity-45;
+}
+
+.message--error {
+    @apply text-base text-red-color font-dm-sans;
+}
+
+.input-submit {
+    @apply px-6 py-3 flex items-center justify-center gap-[10px] rounded-full bg-primary w-fit cursor-pointer;
+}
+
+.input-submit-btn {
+    @apply text-white-color font-dm-sans font-bold text-xl;
+}
