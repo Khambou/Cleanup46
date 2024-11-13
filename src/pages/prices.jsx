@@ -1,10 +1,10 @@
 import { Button } from "../components/Button.jsx";
-import { ArrowRight } from "../assets/icons";
 import "../styles/prices.css";
 import { PricingHeaderImg, PricingMiddleImg } from "../assets/images";
 import { CleaningCarsPricing } from "../components/CleaningCarsPricing";
 import { BannerImage } from "../components/BannerImage";
 import CleaningHouseItemsPricing from "../components/CleaningHouseItemsPricing";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function Prices() {
   return (
@@ -22,9 +22,11 @@ function Prices() {
           </h3>
           <Button
             buttonText="Prenez un rendez-vous"
-            rightIcon={ArrowRight}
+            rightIcon={
+              <FaArrowRightLong className="text-2xl text-white-color" />
+            }
             link="/contact-us"
-            additionalButtonText="text-2xl"
+            additionalButtonText="text-2xl font-bold font-grotesque text-white-color"
             leftIconStyle="fill-white"
           />
         </div>

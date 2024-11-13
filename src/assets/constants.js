@@ -1,4 +1,5 @@
 import { PlaceHolderImg } from "../assets/images";
+import { Call, Instagram, Location, Sms, Whatsapp } from "../assets/icons";
 
 export const priceItems = [
   {
@@ -151,3 +152,157 @@ export const homeItemsPrices = [
     ],
   },
 ];
+
+export const contactUsFormInfos = [
+  {
+    icon: Location,
+    title: "861 route de la seoune 46140 Sauzet",
+  },
+  {
+    icon: Call,
+    title: "05 65 24 56 45 / 06 51 78 13 79",
+  },
+  {
+    icon: Sms,
+    title: "cleaningup46@gmail.com",
+  },
+];
+
+export const fields = [
+  {
+    label: "Nom",
+    type: "text",
+    placeholder: "Ex. John Doe",
+    name: "completeName",
+    rules: {
+      required: "Votre nom est requis",
+      minLength: {
+        value: 4,
+        message: "Le nom doit contenir un minimum de 4 lettres",
+      },
+    },
+  },
+  {
+    label: "Société",
+    type: "text",
+    placeholder: "Ex. Cleanup46",
+    name: "society",
+  },
+  {
+    label: "Numéro de téléphone",
+    type: "number",
+    placeholder: "+33 04 45 45 67 98",
+    name: "phoneNumber",
+    onChange: (value, setValue) =>
+      setValue("phoneNumber", "+33 " + String(value)),
+  },
+  {
+    label: "Sujet",
+    type: "text",
+    placeholder: "Ex. Achat de produit",
+    name: "subject",
+    rules: {
+      required: "Le sujet est requis",
+      minLength: {
+        value: 5,
+        message: "Le sujet doit contenir un minimum de 5 lettres",
+      },
+      maxLength: {
+        value: 50,
+        message: "Le sujet ne peut contenir plus de 50 lettres",
+      },
+    },
+  },
+  {
+    label: "Email",
+    type: "text",
+    placeholder: "Insérer votre addresse email",
+    name: "emailAddress",
+    rules: {
+      required: "Votre email est requis",
+      pattern: {
+        value:
+          /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+        message: "Votre email n'est pas valide",
+      },
+    },
+  },
+  {
+    label: "Question",
+    type: "text",
+    placeholder: "Ex. Quels sont vos tarifs?",
+    name: "question",
+    rules: {
+      required: "Votre question est requise",
+      minLength: {
+        value: 8,
+        message: "La question doit contenir un minimum de 8 lettres",
+      },
+      maxLength: {
+        value: 50,
+        message: "Le question ne peut contenir plus de 50 lettres",
+      },
+    },
+  },
+];
+
+export const listLinks = [
+  {
+    title: "Liens Utiles",
+    links: [
+      {
+        name: "Acceuil",
+        url: "/",
+      },
+      {
+        name: "A propos de nous",
+        url: "/about-us",
+      },
+      {
+        name: "Nos services",
+        url: "/#services",
+      },
+      {
+        name: "FAQ",
+        url: "/#faq",
+      },
+    ],
+  },
+  {
+    title: "Nos Tarifs",
+    links: [
+      {
+        name: "Nettoyage voiture",
+        url: "/tarifs#cleaning-cars",
+      },
+      {
+        name: "Nettoyage Canapé, matelas, tapis et moquette",
+        url: "/tarifs#cleaning-house",
+      },
+    ],
+  },
+];
+
+export const socialLinks = [
+  {
+    icon: Instagram,
+    link: "https://www.instagram.com",
+  },
+  {
+    icon: Whatsapp,
+    link: "/",
+  },
+];
+
+export const contactItems = [
+  {
+    text: "cleaningup46@gmail.com",
+    icon: Sms,
+  },
+  {
+    text: "05 65 24 56 45",
+    icon: Call,
+  },
+];
+
+// inputStyle: "input-submit input-submit-btn",
