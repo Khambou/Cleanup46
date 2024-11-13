@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d118453.css",
-    "main.js": "/static/js/main.860dc1c1.js",
+    "main.css": "/static/css/main.d1f51b1d.css",
+    "main.js": "/static/js/main.6fb706d1.js",
     "static/media/men-cleaning.png": "/static/media/men-cleaning.6591784303f14c15723e.png",
     "static/media/man-washing-car.jpg": "/static/media/man-washing-car.2a6c2126cd75d79ef850.jpg",
     "static/media/car-clean-3.jpg": "/static/media/car-clean-3.8f86d6171c735f161715.jpg",
@@ -36,11 +36,11 @@
     "static/media/arrow-up.svg": "/static/media/arrow-up.3c132fce7ebb3caccd1a5062e77c4197.svg",
     "static/media/arrow-down.svg": "/static/media/arrow-down.84b7fc8b734fe705340efaf96ccf2bc5.svg",
     "index.html": "/index.html",
-    "main.5d118453.css.map": "/static/css/main.5d118453.css.map",
-    "main.860dc1c1.js.map": "/static/js/main.860dc1c1.js.map"
+    "main.d1f51b1d.css.map": "/static/css/main.d1f51b1d.css.map",
+    "main.6fb706d1.js.map": "/static/js/main.6fb706d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d118453.css",
-    "static/js/main.860dc1c1.js"
+    "static/css/main.d1f51b1d.css",
+    "static/js/main.6fb706d1.js"
   ]
 }
