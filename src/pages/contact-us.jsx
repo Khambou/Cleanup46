@@ -5,25 +5,32 @@ import ContactForm from "../components/ContactForm";
 const Page = () => {
   return (
     <section className="general-page-layout">
-      <div className="flex-layout--start justify-between mb-12">
-        <div className="flex flex-col items-start gap-5">
-          <h1 className="h0 -tracking-[0.8px]">Nous contacter</h1>
-          <p className="body-text--normal w-3/5">
+      <div className="grid md:grid-cols-5 justify-between gap-8 md:gap-14 mb-8 lg:mb-12">
+        <div className="flex flex-col items-start gap-5 col-span-2">
+          <h1 className="h0 -tracking-[0.8px] lg:leading-[66px] layout-text">
+            Nous contacter
+          </h1>
+          <p className="body-text--normal hidden lg:block">
             Contactez-nous pour tout ce qui concerne notre entreprise ou nos
             services. Nous ferons de notre mieux pour vous répondre dans les
             plus brefs délais.
           </p>
         </div>
-        <div className="flex flex-col gap-[1.625rem] w-2/5">
+        <div className="flex flex-col items-center md:items-start gap-[1.625rem] col-span-3 lg:col-start-4 lg:col-end-6">
           {contactUsFormInfos.map((info) => (
             <InformationCard
               title={info.title}
-              icon={info.icon}
-              titleStyle="body-text--normal text-text-primary"
+              Icon={info.icon}
+              titleStyle="body-text--normal text-text-primary dark:text-secondary"
             />
           ))}
         </div>
       </div>
+      <p className="body-text--normal lg:hidden my-6 layout-text">
+        Contactez-nous pour tout ce qui concerne notre entreprise ou nos
+        services. Nous ferons de notre mieux pour vous répondre dans les plus
+        brefs délais.
+      </p>
       <div>
         <ContactForm />
       </div>
