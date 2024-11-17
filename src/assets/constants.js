@@ -1,5 +1,7 @@
 import { PlaceHolderImg } from "../assets/images";
-import { Call, Instagram, Location, Sms, Whatsapp } from "../assets/icons";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { IoMailOutline, IoCallOutline } from "react-icons/io5";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 
 export const priceItems = [
   {
@@ -41,7 +43,7 @@ export const priceItems = [
       "Nettoyage approfondi des contours de portes",
     ],
     priceStyle: "text-white-color",
-    bgColor: "bg-green-color",
+    bgColor: "bg-green-color dark:bg-grey-green-color",
   },
 ];
 
@@ -155,15 +157,15 @@ export const homeItemsPrices = [
 
 export const contactUsFormInfos = [
   {
-    icon: Location,
+    icon: HiOutlineLocationMarker,
     title: "861 route de la seoune 46140 Sauzet",
   },
   {
-    icon: Call,
+    icon: IoCallOutline,
     title: "05 65 24 56 45 / 06 51 78 13 79",
   },
   {
-    icon: Sms,
+    icon: IoMailOutline,
     title: "cleaningup46@gmail.com",
   },
 ];
@@ -285,11 +287,11 @@ export const listLinks = [
 
 export const socialLinks = [
   {
-    icon: Instagram,
+    Icon: FaInstagram,
     link: "https://www.instagram.com",
   },
   {
-    icon: Whatsapp,
+    Icon: FaWhatsapp,
     link: "/",
   },
 ];
@@ -297,11 +299,11 @@ export const socialLinks = [
 export const contactItems = [
   {
     text: "cleaningup46@gmail.com",
-    icon: Sms,
+    icon: IoMailOutline,
   },
   {
     text: "05 65 24 56 45",
-    icon: Call,
+    icon: IoCallOutline,
   },
 ];
 
