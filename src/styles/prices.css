@@ -1,3 +1,11 @@
 .left-section-text {
-    @apply font-grotesque text-2xl font-medium;
+    @apply font-grotesque text-xl lg:text-2xl font-medium self-stretch w-full md:w-[340px] lg:w-[412px] text-center md:text-left;
+}
+
+.heading-big {
+    @apply font-grotesque text-4xl md:text-5xl lg:text-[5rem] font-bold -tracking-[1.6px] uppercase lg:pr-20 md:leading-[1.25] text-center md:text-left;
+}
+
+.hero-section-heading {
+    @apply flex flex-col md:flex-row items-start justify-between lg:justify-center lg:gap-[0.625rem];
 }

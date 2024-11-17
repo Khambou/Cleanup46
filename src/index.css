@@ -26,6 +26,10 @@ figure, blockquote, dl, dd {
     margin-block-end: 0;
 }
 
+html, body {
+    @apply dark:bg-dark-color bg-white-color dark:text-secondary;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -93,7 +97,7 @@ textarea:not([rows]) {
 }
 
 .general-page-layout {
-    @apply mx-[120px];
+    @apply mx-5 md:mx-14 lg:mx-[120px];
 }
 
 .body-text--normal {
@@ -109,7 +113,7 @@ textarea:not([rows]) {
 }
 
 .text-h2 {
-    @apply font-bold text-[2rem] tracking-normal font-grotesque text-center;
+    @apply font-bold text-2xl lg:text-[2rem] tracking-normal font-grotesque text-center;
 }
 
 .smooth-transition {
@@ -121,9 +125,13 @@ textarea:not([rows]) {
 }
 
 .h3 {
-    @apply text-2xl font-bold font-grotesque text-dark-color;
+    @apply text-2xl font-bold font-grotesque text-dark-color dark:text-secondary;
 }
 
 .h0 {
-    @apply font-grotesque font-bold text-[5rem] leading-normal -tracking-[0.8px];
+    @apply font-grotesque font-bold text-5xl md:text-6xl lg:text-[5rem] leading-normal -tracking-[0.8px];
+}
+
+.layout-text {
+    @apply text-center md:text-left;
 }

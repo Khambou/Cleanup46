@@ -3,11 +3,11 @@
 }
 
 .form-input {
-    @apply py-5 px-6 rounded-2xl border-[1px] border-solid border-dark-color w-full lg:w-[39rem];
+    @apply py-5 px-6 rounded-2xl border-[1px] border-solid border-dark-color w-full dark:bg-grey-blue-color;
 }
 
 .form-input::placeholder {
-    @apply font-dm-sans text-lg text-text-primary opacity-45;
+    @apply font-dm-sans text-lg text-text-primary dark:text-sky-blue-color opacity-45;
 }
 
 .message--error {
@@ -15,7 +15,7 @@
 }
 
 .input-submit {
-    @apply px-6 py-3 flex items-center justify-center gap-[10px] rounded-full bg-primary w-fit cursor-pointer;
+    @apply px-6 py-3 flex items-center justify-center gap-[10px] rounded-full bg-primary dark:bg-dark-primary w-fit cursor-pointer;
 }
 
 .input-submit-btn {
