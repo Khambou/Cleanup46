@@ -15,7 +15,7 @@ const ContactForm = () => {
   };
   return (
     <form onSubmit={handleSubmit(submitHandler)}>
-      <div className="flex flex-wrap gap-x-5 gap-y-14">
+      <div className="grid md:grid-cols-2 gap-x-5 gap-y-8 lg:gap-y-14">
         {fields.map((field) => (
           <InputField
             field={field}
@@ -26,7 +26,7 @@ const ContactForm = () => {
           />
         ))}
       </div>
-      <div className="flex-layout--center mt-14 mb-28">
+      <div className="flex-layout--center mt-14 mb-10 lg:mb-28">
         <input
           type="submit"
           value="Soummettre"

@@ -1,25 +1,29 @@
 import PriceTag from "./PriceTag";
-import { Check } from "../assets/icons";
+import { FaCheck } from "react-icons/fa";
 
-const PriceItem = ({ priceItem }) => {
+const PriceItem = ({ priceItem, index }) => {
   const { title, price, benefits, priceStyle, bgColor } = priceItem;
+  let span = "";
+
+  if (index === 0) span = "md:col-span-2";
+  else if (index === 1) span = "md:col-span-3";
+  else if (index === 2) span = "md:col-span-5";
+
   return (
     <div
-      className={`p-8 flex-layout--center flex-col gap-12 rounded-3xl shadow-drop w-[25.5rem] ${bgColor ? bgColor : ""}`}
+      className={`py-8 px-6 lg:p-8 flex flex-col gap-8 lg:gap-12 rounded-3xl shadow-drop lg:h-fit dark:bg-grey-blue-color ${bgColor ? bgColor : ""} ${span} lg:col-span-1`}
     >
-      <div className="flex-layout--center flex-col gap-8">
+      <div className="flex-layout--center flex-col gap-5 lg:gap-8">
         <h3 className="text-h2">{title}</h3>
         <PriceTag price={price} priceStyle={priceStyle} />
       </div>
-      <div className="flex flex-col items-start gap-3">
+      <div
+        className={`${index === 2 ? "flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-col" : "flex flex-col"} items-start gap-3`}
+      >
         {benefits.map((benefit) => (
-          <div key={benefit} className="flex-layout--center gap-5">
-            <div className="py-[5px] px-[4.38px] grow rounded-full bg-sky-blue-color">
-              <img
-                src={Check}
-                alt="Check Icon"
-                className="object-contain w-[10px] h-[7.98px]"
-              />
+          <div key={benefit} className="flex items-center gap-5">
+            <div className="p-[6px] rounded-full bg-sky-blue-color">
+              <FaCheck className="text-primary text-xs" />
             </div>
             <p className="text-base font-dm-sans">{benefit}</p>
           </div>
