@@ -1,5 +1,5 @@
 .button-style {
-    @apply px-6 py-3 flex items-center justify-center gap-[10px] rounded-full bg-primary w-fit;
+    @apply px-6 py-3 flex items-center justify-center gap-[10px] rounded-full bg-primary dark:bg-dark-primary w-fit;
 }
 
 .button-text {

@@ -1,11 +1,11 @@
 .tabs-tab {
-    @apply rounded-full px-6 py-4 flex font-grotesque font-bold text-2xl cursor-pointer border-[1px];
+    @apply rounded-full px-3 py-2 md:px-6 md:py-4 flex font-grotesque font-bold text-lg md:text-2xl cursor-pointer border-[1px];
 }
 
 .tabs-tab--active {
-    @apply bg-primary text-white-color;
+    @apply bg-primary dark:bg-dark-primary text-white-color dark:text-secondary;
 }
 
 .tabs-tab--inactive {
-    @apply border-solid border-dark-color text-dark-color;
+    @apply border-solid border-dark-color dark:border-secondary text-dark-color dark:text-secondary;
 }

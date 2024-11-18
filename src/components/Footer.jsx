@@ -3,19 +3,19 @@ import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import { listLinks, socialLinks, contactItems } from "../assets/constants";
 import InformationCard from "./InformationCard";
-import { ArrowRight } from "../assets/icons";
 import { FaArrowRightLong } from "react-icons/fa6";
+import "../styles/footer.css";
 
 const LinkList = ({ list }) => {
   const { title, links } = list;
 
   return (
-    <div className="flex flex-col gap-12 w-[237px]">
+    <div className="link-wrapper">
       <h3 className="h3">{title}</h3>
-      <ul className="flex flex-col gap-6">
+      <ul className="link-wrapper-unordered">
         {links.map((link) => (
           <Link key={link.name} to={link.url}>
-            <li className="body-text--normal font-semibold text-dark-color smooth-transition hover:text-secondary">
+            <li className="body-text--normal link-text smooth-transition">
               {link.name}
             </li>
           </Link>
@@ -27,12 +27,12 @@ const LinkList = ({ list }) => {
 
 const Footer = () => {
   return (
-    <footer className="bg-primary py-14">
-      <div className="general-page-layout flex justify-between pb-16 border-b-2 border-b-secondary">
-        <div className="flex flex-col gap-6 w-[405px]">
-          <div>
+    <footer className="bg-primary dark:bg-dark-primary py-8 md:py-14">
+      <div className="general-page-layout footer-items-container">
+        <div className="flex flex-col gap-6 lg:w-[405px]">
+          <Link to="/">
             <img src={favicon} alt="CleanUp46" className="logo" />
-          </div>
+          </Link>
           <p className="font-dm-sans font-medium text-base">
             Nous sommes une équipe de passionnés dont le but est d'améliorer la
             vie de chacun grâce à des produits disruptifs. Nous fabriquons
@@ -46,41 +46,39 @@ const Footer = () => {
                 <a
                   href={social.link}
                   target="_blank"
-                  className="p-[10px] block rounded-xl border-[1px] border-solid border-dark-color"
+                  className="p-[10px] block"
                   rel="noreferrer"
                 >
-                  <img
-                    src={social.icon}
-                    alt={social.link}
-                    className="w-6 h-6"
-                  />
+                  <social.Icon className="text-2xl" />
                 </a>
               </div>
             ))}
           </div>
         </div>
-        {listLinks.map((list) => (
-          <LinkList list={list} key={list.name} />
-        ))}
-        <div className="flex flex-col gap-12">
-          <h3 className="h3">Rejoignez-nous</h3>
-          <div className="flex flex-col gap-6">
-            {contactItems.map((contact) => (
-              <InformationCard
-                title={contact.text}
-                icon={contact.icon}
-                key={contact.text}
-                titleStyle="font-dm-sans font-bold text-dark-color text-base"
-              />
-            ))}
+        <div className="link-list">
+          {listLinks.map((list) => (
+            <LinkList list={list} key={list.name} />
+          ))}
+          <div className="flex flex-col gap-5 md:gap-7 lg:gap-12">
+            <h3 className="h3">Rejoignez-nous</h3>
+            <div className="flex flex-col gap-6">
+              {contactItems.map((contact) => (
+                <InformationCard
+                  title={contact.text}
+                  Icon={contact.icon}
+                  key={contact.text}
+                  titleStyle="font-dm-sans font-bold text-dark-color dark:text-secondary text-base"
+                />
+              ))}
+            </div>
+            <Button
+              buttonText="Contactez-nous"
+              rightIcon={<FaArrowRightLong className="text-2xl" />}
+              additionalButtonStyles="border-[1px] border-solid border-dark-color dark:border-secondary smoth-transition hover:bg-white-color hover:border-white-color dark:bg-transparent"
+              link="/contact-us"
+              additionalButtonText="text-dark-color dark:text-secondary font-bold text-base font-dm-sans"
+            />
           </div>
-          <Button
-            buttonText="Contactez-nous"
-            rightIcon={<FaArrowRightLong className="text-2xl" />}
-            additionalButtonStyles="border-[1px] border-solid border-dark-color smoth-transition hover:bg-white-color hover:border-white-color"
-            link="/contact-us"
-            additionalButtonText="text-dark-color font-bold text-base font-dm-sans"
-          />
         </div>
       </div>
       <p className="body-text--normal font-grotesque font-bold mt-7 text-center cursor-pointer">
