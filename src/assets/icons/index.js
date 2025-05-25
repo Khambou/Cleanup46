@@ -20,6 +20,7 @@ import StarFast from "./star-fast.svg";
 import Trophy from "./trophy.svg";
 import Whatsapp from "./whatsapp.svg";
 import Check from "./check-lg.svg";
+import CleaningMan from "./cleaning-man.svg";
 
 export {
   AddCircle,
@@ -44,4 +45,5 @@ export {
   Trophy,
   Whatsapp,
   Check,
+  CleaningMan,
 };
