@@ -1,19 +1,17 @@
 import "../styles/navbar.css";
 import { Link } from "react-router-dom";
-import favicon from "../assets/favicon.ico";
 import { useLocation } from "react-router-dom";
 import { LuSun, LuMoon } from "react-icons/lu";
 import { CiMenuFries } from "react-icons/ci";
 import { useEffect, useRef, useState } from "react";
 import { getDisplayClass, switchDarkLightMode } from "../utils/navbarUtils";
 import { CgClose } from "react-icons/cg";
+import Logo from "./Logo";
 
 const NavLink = ({ active, linkTo, linkText }) => (
   <li
     className={
-      active
-        ? "link-active smooth-transition"
-        : "text-dark-color smooth-transition"
+      active ? "link-active smooth-transition" : "text-gray smooth-transition"
     }
   >
     <Link to={linkTo}>{linkText}</Link>
@@ -63,7 +61,8 @@ function Navbar({ darkMode, setDarkMode }) {
 
   return (
     <div className="navbar-container">
-      <img src={favicon} className="logo" alt="logo" />
+      {/*<img src={favicon} className="logo" alt="logo" />*/}
+      <Logo />
       <div className={`navbar ${getDisplayClass(width, showMenu)}`}>
         <ul id="menu" ref={menuRef}>
           {showMenu && (
@@ -91,7 +90,8 @@ function Navbar({ darkMode, setDarkMode }) {
           />
         </ul>
       </div>
-      <div className="flex-layout--center gap-4 md:gap-8">
+      <div className="flex-layout--center gap-4">
+        <p>Theme</p>
         <button
           onClick={() => switchDarkLightMode({ setDarkMode })}
           className="darkMode-icon-wrapper"

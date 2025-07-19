@@ -10,3 +10,11 @@ body {
 .rounded {
     border-radius: 50%;
 }
+
+.image-wrapper {
+    @apply relative w-full h-full;
+}
+
+.gallery {
+    @apply absolute inset-0 w-full h-full object-cover rounded-2xl;
+}

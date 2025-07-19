@@ -4,7 +4,7 @@ import { Button } from "./Button";
 
 const ServicesSection = () => {
   return (
-    <section className="general-page-layout">
+    <section className="general-p-page-layout bg-[#F3F6FC] dark:bg-dark-color py-10 md:pt-16 pb-24">
       <div className="space-y-2">
         <h2 className="font-grotesque font-bold text-5xl">Nos Services</h2>
         <p className="font-grotesque text-3xl">
@@ -23,7 +23,7 @@ const ServicesSection = () => {
           />
         ))}
       </div>
-      <div className="mt-12 mb-24 grid place-items-center">
+      <div className="mt-12 grid place-items-center">
         <Button
           buttonText="Prenez un rendez-vous"
           link="/contact-us"

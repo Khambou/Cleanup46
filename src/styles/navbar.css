@@ -1,11 +1,11 @@
 .navbar ul {
-    @apply flex flex-col lg:flex-row lg:items-center gap-10 md:gap-12 lg:gap-8 px-6 md:px-8 lg:px-0 pt-6 md:pt-10 lg:pt-0 w-3/5 lg:w-auto bg-primary dark:bg-dark-primary h-screen lg:h-auto;
+    @apply flex flex-col lg:flex-row lg:items-center gap-10 md:gap-12 lg:gap-8 px-6 md:px-8 lg:px-0 pt-6 md:pt-10 lg:pt-0 w-3/5 lg:w-auto h-screen lg:h-auto;
 }
 .navbar ul li {
-    @apply font-bold text-lg uppercase;
+    @apply text-lg md:text-xl font-dm-sans;
 }
 .navbar-container {
-    @apply flex items-center justify-between bg-primary dark:bg-dark-primary mb-10 px-5 md:px-10 py-7 lg:py-10 lg:px-20;
+    @apply flex items-center justify-between mb-10 px-5 md:px-14 py-7 lg:pb-10 lg:pt-20 lg:px-[120px];
 }
 
 .menu-icon {
@@ -15,13 +15,19 @@
 .navbar--show {
     @apply fixed z-10 inset-0 w-screen h-screen bg-dark-color/45;
 }
+
+/*.logo {
+/*    @apply h-8 md:h-14 lg:h-20;*/
+/*    width: auto;*/
+/*}*/
+
 .logo {
-    @apply h-8 md:h-14 lg:h-20;
-    width: auto;
+    color: transparent;
+    letter-spacing: -2px;
 }
 
 .link-active {
-    @apply text-white-color relative;
+    @apply dark:text-white-color text-dark-color relative;
 }
 
 .link-active::after {
@@ -30,7 +36,7 @@
 }
 
 .darkMode-icon-wrapper {
-    @apply p-2 cursor-pointer rounded-full border-[1px] border-solid border-white-color;
+    @apply p-2 cursor-pointer rounded-full border-[1px] border-solid dark:border-white-color border-dark-color;
 }
 
 .sun-icon {

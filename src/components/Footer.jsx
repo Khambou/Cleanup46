@@ -1,10 +1,10 @@
-import favicon from "../assets/favicon.ico";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import { listLinks, socialLinks, contactItems } from "../assets/constants";
 import InformationCard from "./InformationCard";
 import { FaArrowRightLong } from "react-icons/fa6";
 import "../styles/footer.css";
+import Logo from "./Logo";
 
 const LinkList = ({ list }) => {
   const { title, links } = list;
@@ -31,9 +31,10 @@ const Footer = () => {
       <div className="general-page-layout footer-items-container">
         <div className="flex flex-col gap-6 lg:w-[405px]">
           <Link to="/">
-            <img src={favicon} alt="CleanUp46" className="logo" />
+            {/*<img src={favicon} alt="CleanUp46" className="logo" />*/}
+            <Logo />
           </Link>
-          <p className="font-dm-sans font-medium text-base">
+          <p className="font-dm-sans font-medium text-base text-logo-grey dark:text-sky-blue-color">
             Nous sommes une équipe de passionnés dont le but est d'améliorer la
             vie de chacun grâce à des produits disruptifs. Nous fabriquons
             d'excellents produits pour résoudre vos problèmes commerciaux. Nos
@@ -46,10 +47,10 @@ const Footer = () => {
                 <a
                   href={social.link}
                   target="_blank"
-                  className="p-[10px] block"
+                  className="block"
                   rel="noreferrer"
                 >
-                  <social.Icon className="text-2xl" />
+                  <social.Icon className="text-2xl text-logo-grey dark:text-sky-blue-color" />
                 </a>
               </div>
             ))}
@@ -81,7 +82,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="body-text--normal font-grotesque font-bold mt-7 text-center cursor-pointer">
+      <p className="body-text--normal font-grotesque font-bold mt-7 text-center cursor-pointer text-logo-grey dark:text-white-color">
         Copyright @ 2024 Tous droits réservés
       </p>
     </footer>

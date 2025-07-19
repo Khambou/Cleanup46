@@ -14,9 +14,11 @@ module.exports = {
       "dark-color": "#1E1E1E",
       "grey-blue-color": "#2A323A",
       "grey-green-color": "#227255",
+      "logo-grey": "rgba(67, 67, 67, 1)",
+      gray: "#C4C3C3",
     },
     fontFamily: {
-      "dm-sans": ["DM Sans", "sans-serif"],
+      "dm-sans": ["Rubik", "sans-serif"],
       grotesque: ["Bricolage Grotesque", "sans-serif"],
     },
   },

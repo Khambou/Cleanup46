@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection";
 import ServicesSection from "../components/ServicesSection";
 import ShowUp from "../components/ShowUp";
 import FAQ from "../components/FAQ";
+import CompanyLocation from "../components/CompanyLocation";
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
         <ServicesSection />
         <ShowUp />
         <FAQ />
+        <CompanyLocation />
       </div>
     </div>
   );
