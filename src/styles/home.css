@@ -3,16 +3,18 @@ body {
     min-height: 100vh;
 }
 
-.title {
-    align-items: center;
-    display: flex;
-}
-
 .cleaning-car {
-    height: 35rem;
-    margin: 5rem 0 0 50rem;
+    @apply lg:w-[627px];
 }
 
 .rounded {
     border-radius: 50%;
+}
+
+.image-wrapper {
+    @apply relative w-full h-full;
+}
+
+.gallery {
+    @apply absolute inset-0 w-full h-full object-cover rounded-2xl;
 }

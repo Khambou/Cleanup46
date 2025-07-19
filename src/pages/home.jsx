@@ -1,15 +1,19 @@
 import "../styles/home.css";
+import HeroSection from "../components/HeroSection";
+import ServicesSection from "../components/ServicesSection";
+import ShowUp from "../components/ShowUp";
+import FAQ from "../components/FAQ";
+import CompanyLocation from "../components/CompanyLocation";
 
 function HomePage() {
   return (
     <div className="home">
-      <div className="title">
-        <h1>Faites briller vos espaces de vie !</h1>
-        <img
-          className="cleaning-car rounded"
-          src="/img/cleaning-car.png"
-          alt="cleaning"
-        />
+      <div className="">
+        <HeroSection />
+        <ServicesSection />
+        <ShowUp />
+        <FAQ />
+        <CompanyLocation />
       </div>
     </div>
   );

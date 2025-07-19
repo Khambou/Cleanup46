@@ -2,6 +2,7 @@ import { PlaceHolderImg } from "../assets/images";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { IoMailOutline, IoCallOutline } from "react-icons/io5";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import { CleaningHand, SofaCouch, CleaningMan } from "./icons";
 
 export const priceItems = [
   {
@@ -308,3 +309,64 @@ export const contactItems = [
 ];
 
 // inputStyle: "input-submit input-submit-btn",
+
+export const serviceItems = [
+  {
+    icon: CleaningHand,
+    highlighted: false,
+    title: "Redonnez éclat à votre voiture et à vos textiles!",
+    description:
+      "Nous sommes spécialisés dans le nettoyage en profondeur de l'intérieur et de l'extérieur de votre voiture, ainsi que de vos textiles de maison. Canapés, matelas, tapis et moquettes : nous éliminons les taches, les saletés et les allergènes pour un environnement frais et sain. Confiez-nous vos espaces pour un résultat impeccable et durable.",
+  },
+  {
+    icon: CleaningMan,
+    highlighted: true,
+    title: "Un nettoyage complet pour un intérieur revitalisé!",
+    description:
+      "Que ce soit pour l'intérieur de votre voiture ou les textiles de votre maison, nous offrons un service de nettoyage qui redonne à vos espaces toute leur splendeur. Canapés, matelas, tapis ou moquettes, nous nous assurons que chaque fibre soit parfaitement nettoyée, pour un confort et une propreté incomparables.",
+  },
+  {
+    icon: SofaCouch,
+    highlighted: false,
+    title: "Votre confort passe par la propreté!",
+    description:
+      "Offrez à votre voiture et à vos textiles de maison un soin professionnel. Nos services de nettoyage redonnent vie à vos intérieurs en éliminant la poussière, les odeurs et les taches. Nous utilisons des techniques avancées pour garantir un nettoyage en profondeur qui respecte vos tissus tout en leur offrant une nouvelle fraîcheur.",
+  },
+];
+
+export const faqQuestions = [
+  {
+    question: "Quels services de nettoyages proposez-vous?",
+    response: "",
+  },
+  {
+    question: "Quels produits utilisez-vous pour le nettoyage?",
+    response:
+      "Nous proposons un nettoyage complet de l'intérieur et de l'extérieur de votre voiture, ainsi que le nettoyage professionnel de vos textiles domestiques, incluant canapés, matelas, tapis, et moquettes.",
+  },
+  {
+    question: "Quels types de véhicules nettoyez-vous?",
+    response: "",
+  },
+  {
+    question: "Combien de temps prend un nettoyage?",
+    response: "",
+  },
+  {
+    question: "Comment se déroule le nettoyage de ma voiture?",
+    response: "",
+  },
+  {
+    question: "Proposez-vous des services à domicile ?",
+    response: "",
+  },
+  {
+    question: "Quels types de textiles nettoyez-vous ?",
+    response:
+      "Nous nettoyons une large gamme de textiles domestiques, y compris les canapés en tissu et en cuir, les matelas, les tapis, et les moquettes. Nos méthodes sont adaptées pour éliminer les taches, la poussière, les allergènes et les mauvaises odeurs.",
+  },
+  {
+    question: "Comment puis-je prendre rendez-vous ?",
+    response: "",
+  },
+];
