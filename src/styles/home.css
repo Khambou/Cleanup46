@@ -11,6 +11,13 @@ body {
     border-radius: 50%;
 }
 
+/*background: linear-gradient(273deg, #1E1E1E 54.97%, #00A1F2 96.79%);*/
+
+.clean-btn {
+    @apply flex items-center justify-center w-fit py-[6px] px-[10px] gap-2
+    rounded-full bg-gradient-to-br to-primary to-95% from-dark-color from-55%
+    dark:from-white-color dark:to-primary;
+}
 .image-wrapper {
     @apply relative w-full h-full;
 }

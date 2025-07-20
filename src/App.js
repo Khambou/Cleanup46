@@ -7,6 +7,7 @@ import ContactPage from "./pages/contact-us.jsx";
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer.jsx";
 import { useEffect, useState } from "react";
+import ScrollToHashElement from "./components/ScrollToHashElement";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,6 +32,7 @@ function App() {
     <div className="font-dm-sans relative">
       <BrowserRouter>
         <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
+        <ScrollToHashElement />
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/tarifs" element={<PricesPage />} />

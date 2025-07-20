@@ -5,7 +5,7 @@ import { IoOpenOutline } from "react-icons/io5";
 
 const FAQ = () => {
   return (
-    <div className="general-page-layout py-20">
+    <div className="general-page-layout py-20" id="faq">
       <h1 className="font-bold font-grotesque text-5xl text-center mb-16">
         Questions fréquemment posées
       </h1>
