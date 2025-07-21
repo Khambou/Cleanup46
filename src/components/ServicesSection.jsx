@@ -1,6 +1,7 @@
 import ServiceItem from "./ServiceItem";
 import { serviceItems } from "../assets/constants";
 import { Button } from "./Button";
+import { FaRegCalendar } from "react-icons/fa";
 
 const ServicesSection = () => {
   return (
@@ -30,6 +31,7 @@ const ServicesSection = () => {
         <Button
           buttonText="Prenez un rendez-vous"
           link="/contact-us"
+          rightIcon={<FaRegCalendar className="text-white text-xl" />}
           additionalButtonStyles="bg-transparent text-primary"
         />
       </div>

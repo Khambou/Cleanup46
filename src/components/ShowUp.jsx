@@ -10,7 +10,7 @@ import {
 
 const ShowUp = () => {
   return (
-    <div className="bg-primary dark:bg-dark-primary py-20">
+    <div className="bg-primary dark:bg-text-primary py-20">
       <h2 className="general-page-layout font-grotesque font-bold text-5xl dark:text-dark-color text-grey-blue-color">
         Votre confort est
         <br /> notre <span className="text-white-color">priorité</span>
@@ -37,8 +37,8 @@ const ShowUp = () => {
         <Button
           leftIcon={<IoCallOutline className="text-2xl" />}
           buttonText="Disponible au: 06 51 78 13 79"
-          additionalButtonText="font-dm-sans font-bold text-xl text-dark-color dark:text-gray"
-          additionalButtonStyles="border-2 dark:border-gray dark:text-gray text-dark-color smooth-transition hover:bg-white-color"
+          additionalButtonText="font-dm-sans text-xl text-dark-color dark:text-white"
+          additionalButtonStyles="border-2 dark:border-white dark:text-white text-dark-color smooth-transition hover:bg-white-color"
         />
       </div>
     </div>

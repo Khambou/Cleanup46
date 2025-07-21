@@ -4,7 +4,7 @@ import { CleanIcon } from "../assets/icons";
 
 const HeroSection = () => {
   return (
-    <section className="my-32 grid place-items-center general-page-layout">
+    <section className="py-32 grid place-items-center general-p-page-layout bg-hero-gradient bg-no-repeat bg-cover">
       <div className="text-center">
         <div className="grid place-items-center mb-10">
           <div className="clean-btn">

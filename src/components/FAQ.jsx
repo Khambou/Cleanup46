@@ -23,7 +23,7 @@ const FAQ = () => {
           rightIcon={<IoOpenOutline className="text-2xl" />}
           link="/contact-us"
           buttonText="Vous avez une question?"
-          additionalButtonText="font-grotesque font-bold underline text-xl"
+          additionalButtonText="font-grotesque font-bold underline dark:text-white text-xl"
         />
       </div>
     </div>

@@ -6,9 +6,9 @@ const Question = ({ question, response }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="p-5 bg-secondary rounded-2xl h-fit">
+    <div className="p-5 bg-secondary dark:bg-text-primary rounded-2xl h-fit">
       <div className="flex items-center justify-between">
-        <h3 className="font-grotesque font-medium text-2xl text-text-primary">
+        <h3 className="font-grotesque font-medium text-2xl text-text-primary dark:text-gray">
           {question}
         </h3>
         <button
@@ -23,7 +23,7 @@ const Question = ({ question, response }) => {
         </button>
       </div>
       {open && (
-        <p className="smooth-transition text-xl text-text-primary mt-5">
+        <p className="smooth-transition text-xl text-text-primary dark:text-gray mt-5">
           {response}
         </p>
       )}

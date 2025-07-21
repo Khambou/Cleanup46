@@ -7,7 +7,7 @@
 }
 
 .link-text {
-    @apply font-semibold text-dark-color hover:text-secondary dark:text-secondary dark:hover:text-dark-color;
+    @apply text-dark-color hover:text-secondary dark:text-secondary dark:hover:text-dark-color;
 }
 
 .footer-items-container {
