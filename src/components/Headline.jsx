@@ -5,14 +5,14 @@ import { AboutUsHeaderImg, RoundedRectangle } from "../assets/images";
 
 const Headline = () => {
   return (
-    <section className="general-p-page-layout my-28 md:grid md:grid-cols-2 gap-44">
+    <section className="general-p-page-layout mt-10 mb-28 md:my-28 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-44">
       <div>
-        <div className="space-y-[1.375rem]">
-          <h1 className="font-bold font-grotesque text-4xl md:text-[5rem] leading-tight">
+        <div className="space-y-4 md:space-y-[1.375rem]">
+          <h1 className="font-bold font-grotesque text-5xl text-center lg:text-left md:text-7xl lg:text-[5rem] leading-tight">
             A propos de <br />
             <span className="text-primary">Cleanup 46</span>
           </h1>
-          <p>
+          <p className="text-center lg:text-left">
             Bienvenue chez Cleanup46, votre partenaire de confiance pour tous
             vos besoins de nettoyage professionnel ! Que ce soit pour votre
             voiture, vos canapés, vos matelas ou vos tapis, nous mettons notre
@@ -20,7 +20,7 @@ const Headline = () => {
             un environnement plus sain
           </p>
         </div>
-        <div className="mt-20">
+        <div className="mt-10 md:mt-20 flex justify-center lg:justify-start">
           <Button
             buttonText="Nos tarifs"
             rightIcon={<FaArrowRightLong className="text-white-color" />}
@@ -28,7 +28,7 @@ const Headline = () => {
           />
         </div>
       </div>
-      <div className="pr-9 pb-8 relative flex justify-end">
+      <div className="md:pr-9 pb-8 hidden relative lg:flex justify-end">
         <div className="w-[550px] h-[507px] relative z-10">
           <img
             src={AboutUsHeaderImg}

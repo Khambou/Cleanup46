@@ -15,9 +15,9 @@ const CleaningHouseItems = () => {
       <Tabs />
       <div className="flex-layout--center my-12">
         <Button
-          rightIcon={<FaArrowRightLong className="text-2xl text-white-color" />}
+          rightIcon={<FaArrowRightLong className="text-lg md:text-xl lg:text-2xl text-white-color" />}
           link="/contact-us"
-          additionalButtonText="text-2xl font-bold font-grotesque text-white-color"
+          additionalButtonText="text-lg md:text-xl lg:text-2xl font-bold font-grotesque text-white-color"
           buttonText="Contactez-nous"
         />
       </div>

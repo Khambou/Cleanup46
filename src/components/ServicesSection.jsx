@@ -9,14 +9,14 @@ const ServicesSection = () => {
       className="general-p-page-layout bg-[#F3F6FC] dark:bg-dark-color py-10 md:pt-16 pb-24"
       id="services"
     >
-      <div className="space-y-2">
-        <h2 className="font-grotesque font-bold text-5xl">Nos Services</h2>
-        <p className="font-grotesque text-3xl">
+      <div className="space-y-2 text-center md:text-left">
+        <h2 className="font-grotesque font-bold text-4xl md:text-5xl">Nos Services</h2>
+        <p className="font-grotesque text-2xl md:text-3xl">
           Découvrez nos
           <br /> services de <span className="text-primary">nettoyage</span>
         </p>
       </div>
-      <div className="mt-7 grid grid-cols-3 gap-7">
+      <div className="mt-7 grid lg:grid-cols-3 gap-7">
         {serviceItems.map((item) => (
           <ServiceItem
             key={item.title}

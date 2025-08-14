@@ -43,7 +43,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (
-              <div>
+              <div key={social.link}>
                 <a
                   href={social.link}
                   target="_blank"
@@ -82,7 +82,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="body-text--normal font-grotesque mt-7 text-center cursor-pointer text-logo-grey dark:text-white-color">
+      <p className="text-lg md:text-[1.125rem] md:leading-normal text-center font-grotesque mt-7 cursor-pointer text-logo-grey dark:text-white-color">
         Copyright @ 2024 Tous droits réservés
       </p>
     </footer>

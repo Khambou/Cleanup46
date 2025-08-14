@@ -4,7 +4,7 @@ import { CleanIcon } from "../assets/icons";
 
 const HeroSection = () => {
   return (
-    <section className="py-32 grid place-items-center general-p-page-layout bg-hero-gradient bg-no-repeat bg-cover">
+    <section className="pb-10 md:py-32 lg:py-24 grid place-items-center general-p-page-layout bg-hero-gradient bg-no-repeat bg-cover">
       <div className="text-center">
         <div className="grid place-items-center mb-10">
           <div className="clean-btn">
@@ -14,13 +14,18 @@ const HeroSection = () => {
             </p>
           </div>
         </div>
-        <h1 className="font-bold text-8xl font-grotesque">
+        <h1 className="font-bold text-5xl md:text-7xl lg:text-8xl font-grotesque">
           Faites briller
           <br /> vos espaces de vie!
         </h1>
-        <p className="text-lg font-dm-sans mt-8 pr-14 text-dark-color dark:text-gray">
+        <p className="text-lg hidden lg:block font-dm-sans mt-8 pr-14 text-dark-color dark:text-gray">
           Notre équipe de nettoyage transforme chaque surface de l'intérieur de
           votre voiture <br /> à vos tapis et moquettes pour vous donner un
+          environnement sain, propre et revitalisé.
+        </p>
+          <p className="text-lg lg:hidden font-dm-sans mt-8 text-dark-color dark:text-gray">
+          Notre équipe de nettoyage transforme chaque surface de l'intérieur de
+          votre voiture à vos tapis et moquettes pour vous donner un
           environnement sain, propre et revitalisé.
         </p>
         <div className="mt-10 grid place-items-center">
