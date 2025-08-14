@@ -27,14 +27,14 @@ const LinkList = ({ list }) => {
 
 const Footer = () => {
   return (
-    <footer className="bg-primary dark:bg-dark-primary py-8 md:py-14">
+    <footer className="bg-primary dark:bg-text-primary py-8 md:py-14">
       <div className="general-page-layout footer-items-container">
         <div className="flex flex-col gap-6 lg:w-[405px]">
           <Link to="/">
             {/*<img src={favicon} alt="CleanUp46" className="logo" />*/}
             <Logo />
           </Link>
-          <p className="font-dm-sans font-medium text-base text-logo-grey dark:text-sky-blue-color">
+          <p className="font-dm-sans text-base text-logo-grey dark:text-sky-blue-color">
             Nous sommes une équipe de passionnés dont le but est d'améliorer la
             vie de chacun grâce à des produits disruptifs. Nous fabriquons
             d'excellents produits pour résoudre vos problèmes commerciaux. Nos
@@ -43,7 +43,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (
-              <div>
+              <div key={social.link}>
                 <a
                   href={social.link}
                   target="_blank"
@@ -82,7 +82,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="body-text--normal font-grotesque font-bold mt-7 text-center cursor-pointer text-logo-grey dark:text-white-color">
+      <p className="text-lg md:text-[1.125rem] md:leading-normal text-center font-grotesque mt-7 cursor-pointer text-logo-grey dark:text-white-color">
         Copyright @ 2024 Tous droits réservés
       </p>
     </footer>

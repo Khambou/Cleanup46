@@ -1,18 +1,22 @@
 import ServiceItem from "./ServiceItem";
 import { serviceItems } from "../assets/constants";
 import { Button } from "./Button";
+import { FaRegCalendar } from "react-icons/fa";
 
 const ServicesSection = () => {
   return (
-    <section className="general-p-page-layout bg-[#F3F6FC] dark:bg-dark-color py-10 md:pt-16 pb-24">
-      <div className="space-y-2">
-        <h2 className="font-grotesque font-bold text-5xl">Nos Services</h2>
-        <p className="font-grotesque text-3xl">
+    <section
+      className="general-p-page-layout bg-[#F3F6FC] dark:bg-dark-color py-10 md:pt-16 pb-24"
+      id="services"
+    >
+      <div className="space-y-2 text-center md:text-left">
+        <h2 className="font-grotesque font-bold text-4xl md:text-5xl">Nos Services</h2>
+        <p className="font-grotesque text-2xl md:text-3xl">
           Découvrez nos
           <br /> services de <span className="text-primary">nettoyage</span>
         </p>
       </div>
-      <div className="mt-7 grid grid-cols-3 gap-7">
+      <div className="mt-7 grid lg:grid-cols-3 gap-7">
         {serviceItems.map((item) => (
           <ServiceItem
             key={item.title}
@@ -27,6 +31,7 @@ const ServicesSection = () => {
         <Button
           buttonText="Prenez un rendez-vous"
           link="/contact-us"
+          rightIcon={<FaRegCalendar className="text-white text-xl" />}
           additionalButtonStyles="bg-transparent text-primary"
         />
       </div>

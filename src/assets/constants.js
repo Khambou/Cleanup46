@@ -2,7 +2,15 @@ import { PlaceHolderImg } from "../assets/images";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { IoMailOutline, IoCallOutline } from "react-icons/io5";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import { CleaningHand, SofaCouch, CleaningMan } from "./icons";
+import {
+  CleaningHand,
+  SofaCouch,
+  CleaningMan,
+  Quality,
+  Reliabale,
+  Environment,
+  CustomerService,
+} from "./icons";
 
 export const priceItems = [
   {
@@ -368,5 +376,32 @@ export const faqQuestions = [
   {
     question: "Comment puis-je prendre rendez-vous ?",
     response: "",
+  },
+];
+
+export const ourValues = [
+  {
+    valueName: "Qualité",
+    valueDescription:
+      "Nous utilisons des produits et des techniques de nettoyage haut de gamme pour assurer des résultats durables et satisfaisants.",
+    valueIcon: Quality,
+  },
+  {
+    valueName: "Fiabilité",
+    valueDescription:
+      "Vous pouvez compter sur nous pour respecter les délais et les engagements pris. Votre satisfaction est notre priorité.",
+    valueIcon: Reliabale,
+  },
+  {
+    valueName: "Respect de l’Environnement",
+    valueDescription:
+      "Nous privilégions l’utilisation de produits écologiques et non toxiques pour protéger votre santé et celle de la planète.",
+    valueIcon: Environment,
+  },
+  {
+    valueName: "Service Client",
+    valueDescription:
+      "Nous croyons en une communication ouverte et honnête. Notre équipe est toujours disponible pour répondre à vos questions et adapter nos services à vos besoins.",
+    valueIcon: CustomerService,
   },
 ];

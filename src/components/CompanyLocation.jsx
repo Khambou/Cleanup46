@@ -5,7 +5,7 @@ const CompanyLocation = () => {
   const encodedQuery = encodeURIComponent(mapQuery);
 
   return (
-    <div className="flex flex-col md:flex-row gap-5 md:gap-x-20 items-center justify-center w-full general-p-page-layout h-screen rounded-xl overflow-hidden shadow-lg py-14 md:py-32 bg-secondary dark:bg-logo-grey">
+    <div className="flex flex-col lg:flex-row gap-5 md:gap-x-20 items-center justify-center w-full general-p-page-layout h-screen overflow-hidden shadow-lg py-14 md:py-32 bg-secondary dark:bg-logo-grey">
       <div>
         <h3 className="font-grotesque font-bold text-2xl md:text-7xl text-text-primary dark:text-sky-blue-color">
           Bordeaux

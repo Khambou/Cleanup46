@@ -23,10 +23,10 @@ function Prices() {
           <Button
             buttonText="Prenez un rendez-vous"
             rightIcon={
-              <FaArrowRightLong className="text-2xl text-white-color" />
+              <FaArrowRightLong className="text-lg md:text-xl lg:text-2xl text-white-color" />
             }
             link="/contact-us"
-            additionalButtonText="text-xl lg:text-2xl font-bold font-grotesque text-white-color"
+            additionalButtonText="text-lg md:text-xl lg:text-2xl md:font-bold font-grotesque text-white-color"
             leftIconStyle="fill-white"
           />
         </div>

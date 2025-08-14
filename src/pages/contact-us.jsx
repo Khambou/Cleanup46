@@ -5,9 +5,9 @@ import ContactForm from "../components/ContactForm";
 const Page = () => {
   return (
     <section className="general-page-layout">
-      <div className="grid md:grid-cols-5 justify-between gap-8 md:gap-14 mb-8 lg:mb-12">
-        <div className="flex flex-col items-start gap-5 col-span-2">
-          <h1 className="h0 -tracking-[0.8px] lg:leading-[66px] layout-text">
+      <div className="grid md:grid-cols-5 md:justify-between gap-y-8 md:gap-14 mb-8 lg:mb-12">
+        <div className="space-y-5 md:col-span-2">
+          <h1 className="h0 -tracking-[0.8px] lg:leading-[66px] layout-text w-full">
             Nous contacter
           </h1>
           <p className="body-text--normal hidden lg:block">
@@ -16,7 +16,7 @@ const Page = () => {
             plus brefs délais.
           </p>
         </div>
-        <div className="flex flex-col items-center md:items-start gap-[1.625rem] col-span-3 lg:col-start-4 lg:col-end-6">
+        <div className="flex flex-col items-start gap-3 md:gap-[1.625rem] col-span-3 lg:col-start-4 lg:col-end-6">
           {contactUsFormInfos.map((info) => (
             <InformationCard
               title={info.title}

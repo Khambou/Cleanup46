@@ -94,7 +94,7 @@ textarea:not([rows]) {
 }
 
 .flex-layout--end {
-    @apply flex items-end justify-center;
+    @apply flex items-center md:items-end justify-center;
 }
 
 .general-page-layout {

@@ -3,5 +3,5 @@
 }
 
 .button-text {
-    @apply text-white-color font-dm-sans font-bold text-xl;
+    @apply text-white-color font-dm-sans md:font-bold text-lg md:text-xl;
 }
