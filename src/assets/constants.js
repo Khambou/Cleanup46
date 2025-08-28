@@ -262,7 +262,7 @@ export const listLinks = [
     title: "Liens Utiles",
     links: [
       {
-        name: "Acceuil",
+        name: "Accueil",
         url: "/",
       },
       {
